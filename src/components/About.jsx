@@ -34,7 +34,7 @@ export default function About() {
     return (
         <div id="about" className="w-full px-[12%] py-10 scroll-mt-20 pt-20 md:pt-10">
             <h4 className="text-center mb-2 text-lg font-Ovo">Información personal</h4>
-            <h2 className="text-center text-5xl font-Ovo">Sobre mí</h2>
+            <h2 className="text-center text-3xl sm:text-5xl font-Ovo">Sobre mí</h2>
 
             <div className="flex w-full flex-col md:flex-row items-start gap-10 mb-6 md:my-10">
                 <div className="w-full md:w-auto md:max-w-max flex justify-center md:justify-start md:mx-0">

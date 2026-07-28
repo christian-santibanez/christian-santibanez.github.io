@@ -75,7 +75,7 @@ export default function Contact() {
         <div id="contact" className="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./assets/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
 
             <h4 className="text-center mb-2 text-lg font-Ovo">Conéctate conmigo</h4>
-            <h2 className="text-center text-5xl font-Ovo">Ponte en contacto</h2>
+            <h2 className="text-center text-3xl sm:text-5xl font-Ovo">Ponte en contacto</h2>
             <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Disponible para roles DevSecOps / AppSec Engineer, modalidad 100% remota (UTC-4). Si estás contratando o conoces una posición junior en este perfil, escríbeme.</p>
 
             <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
