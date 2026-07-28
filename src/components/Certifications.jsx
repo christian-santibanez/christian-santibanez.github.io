@@ -47,7 +47,7 @@ export default function Certifications() {
     return (
         <div id="certifications" className="w-full px-[12%] py-10 scroll-mt-20">
             <h4 className="text-center mb-2 text-lg font-Ovo">Credenciales</h4>
-            <h2 className="text-center text-3xl sm:text-5xl font-Ovo">Certificaciones</h2>
+            <h2 className="text-center text-2xl sm:text-5xl font-Ovo">Certificaciones</h2>
             <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
                 Formación verificable en desarrollo seguro, OWASP e infraestructura cloud.
             </p>
