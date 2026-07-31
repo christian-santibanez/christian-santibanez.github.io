@@ -66,6 +66,20 @@ export default function About() {
                             </li>
                         ))}
                     </ul>
+
+                    <div className="mt-8">
+                        <p className="text-sm text-gray-500 dark:text-white/60 font-Ovo mb-3">
+                            También documento práctica ofensiva en CTFs, con análisis de causa raíz y recomendaciones de remediación.
+                        </p>
+                        <a
+                            href="https://writeups-site.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 text-xs border border-[#2d9cbc] text-[#2d9cbc] dark:border-[#2d9cbc] dark:text-[#2d9cbc] rounded-full hover:bg-[#2d9cbc] hover:text-white dark:hover:text-white transition duration-300 font-Outfit"
+                        >
+                            Ver writeups →
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
