@@ -27,7 +27,7 @@ export default function About() {
             name: 'Proyectos',
             icon1: './assets/project-icon.png',
             icon2: './assets/project-icon-dark.png',
-            description: 'Sentinel API Analyzer · sushidelux.cl (producción real)',
+            description: 'Sentinel API Analyzer · CloudGuard GitOps · sushidelux.cl (producción real)',
         },
     ];
 
@@ -43,7 +43,7 @@ export default function About() {
 
                 <div className="flex-1">
                     <p className="mb-10 max-w-2xl font-Ovo">
-                        Ingeniero en Informática (INACAP, Chile) enfocado en DevSecOps y Application Security. Construí Sentinel API Analyzer, un auditor OWASP API Top 10 con hallazgos mapeados a MITRE ATT&CK y NIST CSF, pipeline DevSecOps en GitHub Actions con Bandit y Trivy, contenedores Docker no-root y logging estructurado para SIEM. También desarrollé y desplegué sushidelux.cl, plataforma e-commerce en producción con JWT, pagos Webpay/Flow y CORS/CSRF por ambiente.
+                        Ingeniero en Informática (INACAP, Chile) con foco en la intersección entre desarrollo y seguridad. Vengo del lado del desarrollo —Python, FastAPI, Django, React— y desde ahí aplico seguridad ofensiva y defensiva: auditoría de APIs, hardening de contenedores, pipelines con controles bloqueantes y modelado de amenazas. Complemento la práctica con CTFs y writeups con análisis de causa raíz. Disponible para roles remotos en DevSecOps o AppSec.
                     </p>
 
                     <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
