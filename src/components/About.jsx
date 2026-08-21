@@ -5,6 +5,9 @@ export default function About() {
     { name: 'Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg' },
     { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
     { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg' },
+    { name: 'Podman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/podman/podman-original.svg' },
+    { name: 'Terraform', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg' },
+    { name: 'GitHub Actions', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg' },
     { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg' },
     { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg' },
     { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg' },
@@ -15,7 +18,7 @@ export default function About() {
             name: 'Stack técnico',
             icon1: './assets/code-icon.png',
             icon2: './assets/code-icon-dark.png',
-            description: 'Python, FastAPI, Django, React, TypeScript, Docker, GitHub Actions, Bandit, Trivy, JWT, PostgreSQL',
+            description: 'Python, FastAPI, Django, React, Docker, Podman, Terraform, GitHub Actions, Bandit, Trivy, Gitleaks, Checkov, PostgreSQL',
         },
         {
             name: 'Educación',
@@ -27,7 +30,7 @@ export default function About() {
             name: 'Proyectos',
             icon1: './assets/project-icon.png',
             icon2: './assets/project-icon-dark.png',
-            description: 'Sentinel API Analyzer · CloudGuard GitOps · sushidelux.cl (producción real)',
+            description: 'Sentinel API Analyzer · CloudGuard GitOps · SOC Blue Team Toolkit · sushidelux.cl (producción real)',
         },
     ];
 
