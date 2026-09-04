@@ -83,6 +83,20 @@ export default function About() {
                             Ver writeups →
                         </a>
                     </div>
+
+                    <div className="mt-6">
+                        <p className="text-sm text-gray-500 dark:text-white/60 font-Ovo mb-3">
+                            Además publico notas técnicas desde la práctica: CVEs, AppSec, DevSecOps y seguridad ofensiva.
+                        </p>
+                        <a
+                            href="https://blog-s4n4t3.netlify.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 text-xs border border-[#2d9cbc] text-[#2d9cbc] dark:border-[#2d9cbc] dark:text-[#2d9cbc] rounded-full hover:bg-[#2d9cbc] hover:text-white dark:hover:text-white transition duration-300 font-Outfit"
+                        >
+                            Ver blog →
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
