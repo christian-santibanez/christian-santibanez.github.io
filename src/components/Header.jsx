@@ -1,4 +1,16 @@
+// Calcula el offset UTC actual de la zona horaria de Santiago de Chile
+function getChileUTCOffset() {
+    const now = new Date();
+    const santiago = new Date(now.toLocaleString("en-US", { timeZone: "America/Santiago" }));
+    const utc = new Date(now.toLocaleString("en-US", { timeZone: "UTC" }));
+    const offsetMinutes = (santiago - utc) / 60000;
+    const sign = offsetMinutes >= 0 ? "+" : "-";
+    const abs = Math.abs(offsetMinutes / 60);
+    return `UTC${sign}${abs}`;
+}
+
 export default function Header() {
+    const utcOffset = getChileUTCOffset();
     return (
         <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-16">
             <img
@@ -13,7 +25,7 @@ export default function Header() {
                 DevSecOps Engineer · AppSec
             </h1>
             <p className="text-gray-500 dark:text-white/60 font-Ovo text-lg">
-                Santiago, Chile · Remoto (UTC-4)
+                Santiago, Chile · Remoto ({utcOffset})
             </p>
             <p className="max-w-2xl mx-auto font-Ovo">
                 Integro seguridad en el ciclo de desarrollo: pipelines CI/CD con SAST/SCA, hardening de contenedores y auditoría activa de APIs bajo OWASP API Top 10.

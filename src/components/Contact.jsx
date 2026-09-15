@@ -1,7 +1,19 @@
 import { useEffect, useState } from 'react'
 
+// Calcula el offset UTC actual de la zona horaria de Santiago de Chile
+function getChileUTCOffset() {
+    const now = new Date();
+    const santiago = new Date(now.toLocaleString("en-US", { timeZone: "America/Santiago" }));
+    const utc = new Date(now.toLocaleString("en-US", { timeZone: "UTC" }));
+    const offsetMinutes = (santiago - utc) / 60000;
+    const sign = offsetMinutes >= 0 ? "+" : "-";
+    const abs = Math.abs(offsetMinutes / 60);
+    return `UTC${sign}${abs}`;
+}
+
 export default function Contact() {
     const [result, setResult] = useState("");
+    const utcOffset = getChileUTCOffset();
     const onSubmit = async (event) => {
         event.preventDefault();
         const hCaptcha = event.target.querySelector('textarea[name=h-captcha-response]').value;
@@ -76,7 +88,7 @@ export default function Contact() {
 
             <h4 className="text-center mb-2 text-lg font-Ovo">Conéctate conmigo</h4>
             <h2 className="text-center text-3xl sm:text-5xl font-Ovo">Ponte en contacto</h2>
-            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Disponible para roles DevSecOps / AppSec Engineer, modalidad 100% remota (UTC-4). Si estás contratando o conoces una posición junior en este perfil, escríbeme.</p>
+            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Disponible para roles DevSecOps / AppSec Engineer, modalidad 100% remota ({utcOffset}). Si estás contratando o conoces una posición junior en este perfil, escríbeme.</p>
 
             <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
 
